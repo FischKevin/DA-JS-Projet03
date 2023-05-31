@@ -12,12 +12,22 @@
   flex-direction: column;
   background-color: v.$menu-background-color;
   font-family: 'Roboto';
+  justify-content: stretch;
+  text-align: center;
   h1 {
     font-size: 24px;
     font-weight: 700;
+    width: 275px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
   h2 {
     font-size: 18px;
     font-weight: 300;
+    width: 315px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

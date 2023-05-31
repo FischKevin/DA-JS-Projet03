@@ -1,3 +1,23 @@
- .toto {
-    color: azure;
- }
+@use '../abstracts/variables' as v;
+
+.main-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: v.$menu-background-color;
+  font-family: 'Roboto';
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}

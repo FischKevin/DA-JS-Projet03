@@ -6,37 +6,84 @@ article, aside,
 footer, header,
 main, menu, nav, section {
   margin: 0;
-  padding: 0;
   border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-article, aside,
-footer, header, main, menu, nav, section {
-  display: block;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ol, ul {
   list-style: none;
 }
 
+body {
+  display: flex;
+}
+
 :root {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
 
-.logo {
-  height: 30px;
-}
-
 header {
   display: flex;
-  justify-content: center;
-  margin-top: 14px;
+  flex-direction: column;
+}
+header .logo {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  padding: 15px 0 10px 0;
+  z-index: 1;
+}
+header .logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  height: 35px;
+}
+header .place {
+  font-family: "Roboto";
+  height: 50px;
+  background-color: #EAEAEA;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 0;
+}
+header .place i {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+header .place .place-input {
+  border: 0;
+  background-color: #EAEAEA;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 10;
+  color: black;
+  padding: 0;
 }
 
-.toto {
-  color: azure;
+.main-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  font-family: "Roboto";
+}
+.intro h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.intro h2 {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

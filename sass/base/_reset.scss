@@ -6,18 +6,16 @@ article, aside,
 footer, header,
 main, menu, nav, section
 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-
-article, aside,
-footer, header, main, menu, nav, section {
-	display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ol, ul {
 	list-style: none;
+}
+
+body {
+    display: flex;
 }

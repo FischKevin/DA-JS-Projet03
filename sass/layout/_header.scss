@@ -1,5 +1,42 @@
- header {
+@use '../abstracts/variables' as v;
+ 
+header {
     display: flex;
-    justify-content: center;
-    margin-top: 14px;
- }
+    flex-direction: column;
+    .logo {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      padding: 15px 0 10px 0;
+      z-index: 1;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 30px;
+        height: 35px;
+      }
+    }
+    .place {
+      font-family: 'Roboto';
+      height: 50px;
+      background-color: v.$place-background-color;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 16px 0;
+      i {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+      .place-input {
+        border: 0;
+        background-color: v.$place-background-color;
+        font-size: 16px;
+        font-weight: 500;
+        opacity: 10;
+        color: black;
+        padding: 0;
+      }
+    }
+}

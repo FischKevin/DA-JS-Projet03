@@ -87,7 +87,7 @@ header .place .place-input {
   flex-direction: column;
 }
 
-.title {
+.section-title {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -149,19 +149,29 @@ header .place .place-input {
 .fonctionnement .cards .instructions .fa-solid {
   color: #7E7E7E;
   font-size: 20px;
-  position: absolute;
-  left: 22%;
+  position: relative;
+  left: 6%;
 }
 .fonctionnement .cards .instructions .wording {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  position: absolute;
-  left: 30%;
+  position: relative;
+  left: 11%;
 }
 
 .restaurants {
   background-color: #F7F7F7;
+}
+.restaurants .cards {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .cards .restaurants {
+  min-width: 346px;
+}
+.restaurants .cards .restaurants img {
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

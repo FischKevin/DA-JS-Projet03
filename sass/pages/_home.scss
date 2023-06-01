@@ -7,27 +7,79 @@
   flex-direction: column;
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: 'Roboto';
+}
+
 .intro {
   display: flex;
   flex-direction: column;
   background-color: v.$menu-background-color;
   font-family: 'Roboto';
-  justify-content: stretch;
   text-align: center;
   h1 {
     font-size: 24px;
     font-weight: 700;
-    width: 275px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    min-width: 275px;
+    margin: 30px auto 15px auto;
   }
   h2 {
     font-size: 18px;
     font-weight: 300;
-    width: 315px;
-    margin-right: auto;
-    margin-left: auto;
+    min-width: 315px;
+    margin: 0 auto;
   }
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  padding-top: 40px;
+  padding-bottom: 30px;
+  .cards {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    .instructions{
+      background-color: v.$instruction-background-color;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      margin: 0 20px;
+      display: inline;
+      padding: 20px 0 ;
+      width: 322px;
+      margin-bottom: 25px;
+      .number {
+        width: 24px;
+        height: 24px;
+        background: v.$primary-color;
+        border-radius: 50%;
+        color: white;
+        padding: 3px 8px;
+        margin-left: -12px;
+      }
+      .fa-solid {
+        color: v.$instruction-icon-color;
+        font-size: 20px;
+        position: absolute;
+        left: 22%;
+      }
+      .wording {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        position: absolute;
+        left: 30%;
+      }
+    }
+  }
+}
+
+.restaurants {
+  background-color: v.$instruction-background-color;
 }

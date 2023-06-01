@@ -68,7 +68,7 @@ header .place {
 }
 header .place i {
   margin-right: 15px;
-  margin-left: 45px;
+  margin-left: 0px;
   font-size: 16px;
 }
 header .place .place-input {
@@ -87,29 +87,81 @@ header .place .place-input {
   flex-direction: column;
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: "Roboto";
+}
+
 .intro {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
   font-family: "Roboto";
-  justify-content: stretch;
   text-align: center;
 }
 .intro h1 {
   font-size: 24px;
   font-weight: 700;
-  width: 275px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  min-width: 275px;
+  margin: 30px auto 15px auto;
 }
 .intro h2 {
   font-size: 18px;
   font-weight: 300;
-  width: 315px;
-  margin-right: auto;
-  margin-left: auto;
+  min-width: 315px;
+  margin: 0 auto;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.fonctionnement .cards {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+.fonctionnement .cards .instructions {
+  background-color: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin: 0 20px;
+  display: inline;
+  padding: 20px 0;
+  width: 322px;
+  margin-bottom: 25px;
+}
+.fonctionnement .cards .instructions .number {
+  width: 24px;
+  height: 24px;
+  background: #9356DC;
+  border-radius: 50%;
+  color: white;
+  padding: 3px 8px;
+  margin-left: -12px;
+}
+.fonctionnement .cards .instructions .fa-solid {
+  color: #7E7E7E;
+  font-size: 20px;
+  position: absolute;
+  left: 22%;
+}
+.fonctionnement .cards .instructions .wording {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  left: 30%;
+}
+
+.restaurants {
+  background-color: #F7F7F7;
 }
 
 /*# sourceMappingURL=style.css.map */

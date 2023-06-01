@@ -13,7 +13,6 @@ header {
         margin-left: auto;
         margin-right: auto;
         height: 30px;
-        height: 35px;
       }
     }
     .place {
@@ -21,22 +20,21 @@ header {
       height: 50px;
       background-color: v.$place-background-color;
       width: 100%;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
       padding: 16px 0;
+      display: flex;
+      justify-content: center;
       i {
         margin-right: 15px;
-        margin-left: 15px;
+        margin-left: 45px;
+        font-size: 16px;
       }
       .place-input {
         border: 0;
         background-color: v.$place-background-color;
         font-size: 16px;
         font-weight: 500;
-        opacity: 10;
-        color: black;
         padding: 0;
+        margin-top: -1px;
       }
     }
 }

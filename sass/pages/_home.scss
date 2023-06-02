@@ -82,22 +82,44 @@
 
 .restaurants {
   background-color: v.$instruction-background-color;
-
+  padding: 40px 0;
+  font-family: 'Roboto';
   .cards {
     display: flex;
     flex-direction: column;
-    .restaurants {
-      min-width: 346px;
+    padding: 0 15px 15px 15px;
+    .restaurant {
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      background-color: white;
+      margin-bottom: 15px;
+      padding-bottom: 30px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
       img {
         object-fit: cover;
+        height: 231px;
+        width: auto;
+        border-radius: 15px 15px 0 0;
+        margin-bottom: 15px;
       }
       .wording {
-
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
         .title {
-
+          font-weight: 700;
+          font-size: 18px;
         }
         .subtitle {
-
+          font-weight: 300;
+          font-size: 17px;
+        }
+        .fa-heart {
+          font-size: 20px;
+          position: relative;
+          left: 90%;
+          margin-top: -35px;
         }
       }
     }

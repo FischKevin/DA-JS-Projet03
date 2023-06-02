@@ -1,1 +1,24 @@
- 
+@use '../abstracts/variables' as v; 
+
+footer {
+    background-color: v.$footer-background;
+    color: white;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    .logo {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Shrikhand';
+        margin-bottom: 25px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        .element {
+            margin-bottom: 7px;
+        }
+    }
+}

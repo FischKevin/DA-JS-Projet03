@@ -41,6 +41,29 @@ button {
   margin-top: 25px;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+footer .logo {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Shrikhand";
+  margin-bottom: 25px;
+}
+footer .content {
+  display: flex;
+  flex-direction: column;
+}
+footer .content .element {
+  margin-bottom: 7px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -101,6 +124,7 @@ header .place .place-input {
   background-color: #F6F6F6;
   font-family: "Roboto";
   text-align: center;
+  padding: 0 15px;
 }
 .intro h1 {
   font-size: 24px;

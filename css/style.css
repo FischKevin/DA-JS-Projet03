@@ -226,7 +226,7 @@ header .place .place-input {
 .restaurants .cards .restaurant .wording .fa-heart {
   font-size: 20px;
   position: relative;
-  left: 90%;
+  padding-left: calc(100% - 35px);
   margin-top: -35px;
 }
 

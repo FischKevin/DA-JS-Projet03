@@ -1,1 +1,12 @@
- 
+@mixin rotation {
+    animation: rotation 1s linear 0s 3;
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+

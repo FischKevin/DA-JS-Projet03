@@ -10,9 +10,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: white;
-    opacity: 0;
-    z-index: 1;
+    background-color:rgba(255, 255, 255, 0.8);
     @include opacity;
     
 }
@@ -26,6 +24,7 @@
     border-radius: 50%;
     border-bottom-color: transparent;
     right: calc(50% - 50px);
-    top: 30%;
+    top: 40%;
+    display: block;
     @include rotation;
 } 

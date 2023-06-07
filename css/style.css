@@ -314,11 +314,48 @@ header .place .place-input {
   font-weight: 300;
   font-size: 17px;
 }
-.restaurants .cards .restaurant .wording .fa-heart {
+.restaurants .cards .restaurant .wording .fa-regular {
   font-size: 20px;
   position: relative;
   padding-left: calc(100% - 35px);
   margin-top: -35px;
+}
+.restaurants .cards .restaurant .wording .fa-regular:hover {
+  animation: heart-not-filled 0.3s linear 0s 1 forwards;
+}
+@keyframes heart-not-filled {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.restaurants .cards .restaurant .wording .fa-solid {
+  font-size: 20px;
+  position: relative;
+  padding-left: calc(100% - 36px);
+  margin-top: -20px;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.restaurants .cards .restaurant .wording .fa-solid:hover {
+  animation: heart-filled 0.3s linear 0s 1 forwards;
+}
+@keyframes heart-filled {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.restaurants .cards .restaurant .wording .toto {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

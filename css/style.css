@@ -267,7 +267,11 @@ header .place .place-input {
   flex-direction: column;
   padding: 0 15px 15px 15px;
 }
-.restaurants .cards .restaurant {
+.restaurants .cards a, .restaurants .cards a:visited, .restaurants .cards a:focus {
+  text-decoration: none;
+  color: black;
+}
+.restaurants .cards a .restaurant, .restaurants .cards a:visited .restaurant, .restaurants .cards a:focus .restaurant {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -276,14 +280,14 @@ header .place .place-input {
   padding-bottom: 30px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.restaurants .cards .restaurant img {
+.restaurants .cards a .restaurant img, .restaurants .cards a:visited .restaurant img, .restaurants .cards a:focus .restaurant img {
   object-fit: cover;
   height: 231px;
   width: auto;
   border-radius: 15px 15px 0 0;
   margin-bottom: 15px;
 }
-.restaurants .cards .restaurant .new {
+.restaurants .cards a .restaurant .new, .restaurants .cards a:visited .restaurant .new, .restaurants .cards a:focus .restaurant .new {
   color: #008766;
   font-family: "Roboto";
   font-style: normal;
@@ -301,27 +305,27 @@ header .place .place-input {
   border-radius: 2px;
   padding: 7px 9px;
 }
-.restaurants .cards .restaurant .wording {
+.restaurants .cards a .restaurant .wording, .restaurants .cards a:visited .restaurant .wording, .restaurants .cards a:focus .restaurant .wording {
   display: flex;
   flex-direction: column;
   padding: 0 10px;
 }
-.restaurants .cards .restaurant .wording .title {
+.restaurants .cards a .restaurant .wording .title, .restaurants .cards a:visited .restaurant .wording .title, .restaurants .cards a:focus .restaurant .wording .title {
   font-weight: 700;
   font-size: 18px;
 }
-.restaurants .cards .restaurant .wording .subtitle {
+.restaurants .cards a .restaurant .wording .subtitle, .restaurants .cards a:visited .restaurant .wording .subtitle, .restaurants .cards a:focus .restaurant .wording .subtitle {
   font-weight: 300;
   font-size: 17px;
 }
-.restaurants .cards .restaurant .wording .fa-regular {
+.restaurants .cards a .restaurant .wording .fa-regular, .restaurants .cards a:visited .restaurant .wording .fa-regular, .restaurants .cards a:focus .restaurant .wording .fa-regular {
   font-size: 20px;
   position: relative;
   left: calc(100% - 35px);
   margin-top: -35px;
   width: 20px;
 }
-.restaurants .cards .restaurant .wording .fa-solid {
+.restaurants .cards a .restaurant .wording .fa-solid, .restaurants .cards a:visited .restaurant .wording .fa-solid, .restaurants .cards a:focus .restaurant .wording .fa-solid {
   font-size: 21px;
   width: 21px;
   position: relative;
@@ -343,7 +347,7 @@ header .place .place-input {
     opacity: 0;
   }
 }
-.restaurants .cards .restaurant .wording .fa-solid:hover {
+.restaurants .cards a .restaurant .wording .fa-solid:hover, .restaurants .cards a:visited .restaurant .wording .fa-solid:hover, .restaurants .cards a:focus .restaurant .wording .fa-solid:hover {
   animation: heart-filled 0.3s linear 0s 1 forwards;
 }
 @keyframes heart-filled {

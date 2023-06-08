@@ -61,22 +61,27 @@
     animation: heart-filled 0.3s linear 0s 1 forwards;
     @keyframes heart-filled {
         0% {
-            opacity: 0;      
+            font-weight: normal;     
         }
         100% {
-            opacity: 1;      
+            font-weight: bold;
         }
     }
 }
 
 @mixin heart-not-filled {
-    animation: heart-not-filled 0.35s linear 0s 1 both;
+    animation: heart-not-filled 0.2s linear 0s 1 forwards;
     @keyframes heart-not-filled {
         0% {
-            opacity: 1;      
+            font-weight: bold;
+            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
         }
         100% {
-            opacity: 0;      
+            font-weight: normal;      
         }
     }
 }

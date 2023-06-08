@@ -70,7 +70,7 @@
 }
 
 @mixin heart-not-filled {
-    animation: heart-not-filled 0.3s linear 0s 1 forwards;
+    animation: heart-not-filled 0.35s linear 0s 1 both;
     @keyframes heart-not-filled {
         0% {
             opacity: 1;      

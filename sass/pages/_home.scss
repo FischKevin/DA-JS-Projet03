@@ -26,13 +26,11 @@
   h1 {
     font-size: 24px;
     font-weight: 700;
-    min-width: 275px;
     margin: 30px auto 15px auto;
   }
   h2 {
     font-size: 18px;
     font-weight: 300;
-    min-width: 315px;
     margin: 0 auto;
   }
 }
@@ -47,14 +45,19 @@
     display: flex;
     align-self: center;
     flex-direction: column;
+    min-width: 260px;
+    // max-width: 322px;
+    padding-left: 10px;
+    // margin-right: 20px;
     .instructions{
       background-color: v.$instruction-background-color;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
       border-radius: 20px;
-      margin: 0 20px;
-      display: inline;
+      margin: 0;
+      display: flex;
+      box-sizing: content-box;
       padding: 20px 0 ;
-      width: 322px;
+      max-width: 322px;
       margin-bottom: 25px;
       .number {
         width: 24px;

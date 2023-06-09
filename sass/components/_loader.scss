@@ -4,13 +4,14 @@
 .loading-window {
     position: fixed;
     display: block;
-    width: 100%;
+    min-width: 328px;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color:rgba(255, 255, 255, 0.8);
+    overflow-x: auto;
     @include opacity;
     
 }

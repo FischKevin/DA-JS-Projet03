@@ -123,6 +123,12 @@ footer {
   flex-direction: column;
   padding: 25px;
 }
+@media (min-width: 767.99px) {
+  footer {
+    flex-direction: row-reverse;
+    padding-top: 60px;
+  }
+}
 footer .logo {
   font-style: italic;
   font-weight: 400;
@@ -130,15 +136,35 @@ footer .logo {
   font-family: "Shrikhand";
   margin-bottom: 25px;
 }
+@media (min-width: 767.99px) {
+  footer .logo {
+    margin-left: 20px;
+  }
+}
 footer .content {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 767.99px) {
+  footer .content {
+    flex-direction: row;
+  }
+}
 footer .content .element {
   margin-bottom: 7px;
 }
+@media (min-width: 767.99px) {
+  footer .content .element {
+    margin-left: 14px;
+  }
+}
 footer .content .fa-solid {
   width: 20px;
+}
+@media (min-width: 767.99px) {
+  footer .content .fa-solid {
+    margin-left: 13px;
+  }
 }
 
 header {

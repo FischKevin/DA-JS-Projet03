@@ -7,21 +7,37 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 25px;
+    @media (min-width: 767.99px) {
+        flex-direction: row-reverse;
+        padding-top: 60px;
+      }
     .logo {
         font-style: italic;
         font-weight: 400;
         font-size: 18px;
         font-family: 'Shrikhand';
         margin-bottom: 25px;
+        @media (min-width: 767.99px) {
+            margin-left: 20px;
+          }
     }
     .content {
         display: flex;
         flex-direction: column;
+        @media (min-width: 767.99px) {
+            flex-direction: row;
+          }
         .element {
             margin-bottom: 7px;
+            @media (min-width: 767.99px) {
+                margin-left: 14px;
+              }
         }
         .fa-solid {
             width: 20px;
+            @media (min-width: 767.99px) {
+                margin-left: 13px;
+              }
         }
     }
 }

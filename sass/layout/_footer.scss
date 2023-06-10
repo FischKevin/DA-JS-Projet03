@@ -20,6 +20,10 @@ footer {
         @media (min-width: 767.99px) {
             margin-left: 20px;
           }
+          @media (min-width: 1023.99px) {
+            margin-left: 60px;
+            margin-right: 40px;
+          }
     }
     .content {
         display: flex;
@@ -32,11 +36,24 @@ footer {
             @media (min-width: 767.99px) {
                 margin-left: 14px;
               }
+            }
+        .mentions {
+            @media (min-width: 1023.99px) {
+                margin-left: 40px;
+              }
+            }
+        .contact {
+        @media (min-width: 1023.99px) {
+            margin-left: 30px;
+            }
         }
         .fa-solid {
             width: 20px;
             @media (min-width: 767.99px) {
                 margin-left: 13px;
+              }
+              @media (min-width: 1023.99px) {
+                margin-left: 5px;
               }
         }
     }

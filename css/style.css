@@ -141,6 +141,12 @@ footer .logo {
     margin-left: 20px;
   }
 }
+@media (min-width: 1023.99px) {
+  footer .logo {
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+}
 footer .content {
   display: flex;
   flex-direction: column;
@@ -158,12 +164,27 @@ footer .content .element {
     margin-left: 14px;
   }
 }
+@media (min-width: 1023.99px) {
+  footer .content .mentions {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 1023.99px) {
+  footer .content .contact {
+    margin-left: 30px;
+  }
+}
 footer .content .fa-solid {
   width: 20px;
 }
 @media (min-width: 767.99px) {
   footer .content .fa-solid {
     margin-left: 13px;
+  }
+}
+@media (min-width: 1023.99px) {
+  footer .content .fa-solid {
+    margin-left: 5px;
   }
 }
 

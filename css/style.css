@@ -137,6 +137,9 @@ footer .content {
 footer .content .element {
   margin-bottom: 7px;
 }
+footer .content .fa-solid {
+  width: 20px;
+}
 
 header {
   display: flex;

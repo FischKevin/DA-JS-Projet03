@@ -6,11 +6,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  // @media (min-width: 1023.99px) {
-  //   width: 1024px;
-  //   margin-right: auto;
-  //   margin-left: auto;
-  // }
 }
 
 .section-title {
@@ -112,7 +107,7 @@
   background-color: v.$instruction-background-color;
   padding: 40px 15px 0 15px;
   font-family: 'Roboto';
-  .toto {
+  .all-restaurants {
      @media (min-width: 1023.99px) {
       width: 1024px;
       margin-right: auto;
@@ -127,11 +122,6 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-    // @media (min-width: 1023.99px) {
-    //   width: 1024px;
-    //   margin-right: auto;
-    //   margin-left: auto;
-    // }
     a, a:visited, a:focus {
       text-decoration: none;
       color: black;

@@ -351,7 +351,7 @@ header .place .place-input {
   font-family: "Roboto";
 }
 @media (min-width: 1023.99px) {
-  .restaurants .toto {
+  .restaurants .all-restaurants {
     width: 1024px;
     margin-right: auto;
     margin-left: auto;

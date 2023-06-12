@@ -563,6 +563,8 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
 }
 .menu .menu-category {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .menu .menu-category .menu-category-title {
   font-family: "Roboto";
@@ -578,6 +580,32 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   height: 3px;
   bottom: -5px;
   background: #99E2D0;
+}
+.menu .menu-category .menu-item {
+  font-family: "Roboto";
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: flex-end;
+}
+.menu .menu-category .menu-item .dish-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu .menu-category .menu-item .dish-subtitle {
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu .menu-category .menu-item .dish-price {
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  top: -17px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -56,6 +56,8 @@ header {
     }
     .menu-category {
         position: relative;
+        display: flex;
+        flex-direction: column;
         .menu-category-title {
             font-family: 'Roboto';
             font-size: 16px;
@@ -70,6 +72,32 @@ header {
             height: 3px;
             bottom: -5px;
             background: v.$dish-category-underline-color;
+        }
+        .menu-item {
+            font-family: 'Roboto';
+            background-color: white;
+            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            justify-content: flex-end;
+            .dish-title {
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .dish-subtitle {
+                font-size: 15px;
+                font-weight: 300;
+            }
+            .dish-price {
+                font-size: 15px;
+                font-weight: 700;
+                position: relative;
+                top: -17px;
+            }
         }
     }
 }

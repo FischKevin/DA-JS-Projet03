@@ -1,0 +1,75 @@
+@use '../abstracts/variables' as v;
+
+header {
+    .arrow {
+        position: absolute;
+        font-size: 16px;
+        padding-left: 20px;
+        a, a:visited, a:focus {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.restaurant-image {
+    img {
+    height: 275px;
+    object-fit: cover;
+    width: 100%;
+    }
+}
+
+.menu {
+    background-color: v.$instruction-background-color;
+    border-radius: 40px 40px 0 0;
+    margin-top: -43px;
+    .restaurant-name {
+        display: flex;
+        position: relative;
+        margin: 30px 15px 0 15px;
+        justify-content: center;
+        .content {
+            align-items: baseline;
+            display: flex;
+            h1 {
+                font-size: 28px;
+                font-weight: 400;
+                margin-right: 40px;
+            }
+            .fa-heart {
+                position: relative;
+                font-size: 21px;
+                width: 23px;
+                padding-top: 8px;
+                @include heart-not-filled;
+                &:hover {
+                  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  -moz-background-clip: text;
+                  -moz-text-fill-color: transparent;
+                  @include heart-filled;
+                }
+            }
+        }
+    }
+    .menu-category {
+        position: relative;
+        .menu-category-title {
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+            display: inline-block;
+        }
+        .menu-category-title::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            bottom: -5px;
+            background: v.$dish-category-underline-color;
+        }
+    }
+}

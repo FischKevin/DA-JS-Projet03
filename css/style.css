@@ -127,6 +127,12 @@ footer {
   footer {
     flex-direction: row-reverse;
     padding-top: 60px;
+    height: 114px;
+  }
+}
+@media (min-width: 1023.99px) {
+  footer {
+    width: 100%;
   }
 }
 footer .logo {
@@ -277,6 +283,13 @@ header .place .place-input {
   font-family: "Roboto";
   padding: 40px 15px 30px 15px;
 }
+@media (min-width: 1023.99px) {
+  .fonctionnement {
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .fonctionnement .cards {
   display: flex;
   align-self: center;
@@ -336,6 +349,13 @@ header .place .place-input {
   background-color: #F7F7F7;
   padding: 40px 15px 0 15px;
   font-family: "Roboto";
+}
+@media (min-width: 1023.99px) {
+  .restaurants .toto {
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .restaurants .cards {
   display: flex;

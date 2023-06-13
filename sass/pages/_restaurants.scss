@@ -124,8 +124,12 @@ header {
     }
 }
 .order-button {
-    background: v.$instruction-background-color;
-    align-items: center;
+    background: v.$instruction-background-color;    align-items: center;
     display: flex;
     padding-top: 20px;
+    @media (min-width: 1023.99px) {
+        width: 1055px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 }

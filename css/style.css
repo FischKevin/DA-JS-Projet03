@@ -642,5 +642,12 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   display: flex;
   padding-top: 20px;
 }
+@media (min-width: 1023.99px) {
+  .order-button {
+    width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

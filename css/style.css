@@ -179,7 +179,7 @@ footer .content a, footer .content a:visited, footer .content a:focus {
 }
 @media (min-width: 1023.99px) {
   footer .content a .contact, footer .content a:visited .contact, footer .content a:focus .contact {
-    margin-left: 30px;
+    margin-left: 15px;
   }
 }
 footer .content a .fa-solid, footer .content a:visited .fa-solid, footer .content a:focus .fa-solid {

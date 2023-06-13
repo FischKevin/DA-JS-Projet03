@@ -510,6 +510,13 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   border-radius: 40px 40px 0 0;
   margin-top: -43px;
 }
+@media (min-width: 1023.99px) {
+  .menu {
+    width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .menu .restaurant-name {
   display: flex;
   position: relative;
@@ -566,6 +573,13 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
+}
+@media (min-width: 1023.99px) {
+  .menu .menu-category {
+    width: 634px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .menu .menu-category .menu-category-title {
   font-family: "Roboto";

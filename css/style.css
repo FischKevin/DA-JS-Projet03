@@ -565,6 +565,7 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 .menu .menu-category .menu-category-title {
   font-family: "Roboto";
@@ -572,6 +573,7 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   font-weight: 300;
   position: relative;
   display: inline-block;
+  margin: 20px 0 5px 15px;
 }
 .menu .menu-category .menu-category-title::before {
   content: "";
@@ -589,23 +591,33 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  justify-content: flex-end;
+  margin: 15px 10px 0 10px;
+  padding-top: 10px;
 }
 .menu .menu-category .menu-item .dish-title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
+  padding-left: 15px;
 }
 .menu .menu-category .menu-item .dish-subtitle {
   font-size: 15px;
   font-weight: 300;
+  padding-left: 15px;
+  margin-top: 5px;
 }
 .menu .menu-category .menu-item .dish-price {
   font-size: 15px;
   font-weight: 700;
   position: relative;
   top: -17px;
+  padding-left: calc(100% - 50px);
+}
+
+.order-button {
+  background: #F7F7F7;
+  align-items: center;
+  display: flex;
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

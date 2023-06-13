@@ -121,7 +121,7 @@ footer {
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  padding: 22px;
 }
 @media (min-width: 767.99px) {
   footer {
@@ -162,34 +162,36 @@ footer .content {
     flex-direction: row;
   }
 }
-footer .content .element {
+footer .content a, footer .content a:visited, footer .content a:focus {
+  text-decoration: none;
+  color: white;
   margin-bottom: 7px;
 }
 @media (min-width: 767.99px) {
-  footer .content .element {
+  footer .content a .element, footer .content a:visited .element, footer .content a:focus .element {
     margin-left: 14px;
   }
 }
 @media (min-width: 1023.99px) {
-  footer .content .mentions {
+  footer .content a .mentions, footer .content a:visited .mentions, footer .content a:focus .mentions {
     margin-left: 40px;
   }
 }
 @media (min-width: 1023.99px) {
-  footer .content .contact {
+  footer .content a .contact, footer .content a:visited .contact, footer .content a:focus .contact {
     margin-left: 30px;
   }
 }
-footer .content .fa-solid {
+footer .content a .fa-solid, footer .content a:visited .fa-solid, footer .content a:focus .fa-solid {
   width: 20px;
 }
 @media (min-width: 767.99px) {
-  footer .content .fa-solid {
+  footer .content a .fa-solid, footer .content a:visited .fa-solid, footer .content a:focus .fa-solid {
     margin-left: 13px;
   }
 }
 @media (min-width: 1023.99px) {
-  footer .content .fa-solid {
+  footer .content a .fa-solid, footer .content a:visited .fa-solid, footer .content a:focus .fa-solid {
     margin-left: 5px;
   }
 }

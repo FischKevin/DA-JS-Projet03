@@ -614,12 +614,19 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   font-size: 18px;
   font-weight: 600;
   padding-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .menu-category .menu-item .dish-subtitle {
   font-size: 15px;
   font-weight: 300;
   padding-left: 15px;
   margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 55px);
 }
 .menu .menu-category .menu-item .dish-price {
   font-size: 15px;

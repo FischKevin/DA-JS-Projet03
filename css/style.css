@@ -608,7 +608,7 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   flex-direction: column;
   position: relative;
   margin: 15px 10px 0 10px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .menu .menu-category .menu-item .dish-title {
   font-size: 18px;

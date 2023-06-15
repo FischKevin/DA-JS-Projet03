@@ -537,7 +537,7 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
 .menu .restaurant-name .content .fa-heart {
   position: relative;
   font-size: 21px;
-  width: 23px;
+  width: 24px;
   padding-top: 8px;
   animation: heart-not-filled 0.2s linear 0s 1 forwards;
 }

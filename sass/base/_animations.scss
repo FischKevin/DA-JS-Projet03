@@ -85,3 +85,39 @@
         }
     }
 }
+
+@mixin show-menu-starter {
+    animation: show-menu 3s linear 0s 1 forwards;
+    @keyframes show-menu {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin show-menu-dishes {
+    animation: show-menu-dishes 3s linear 0.75s 1 forwards;
+    @keyframes show-menu-dishes {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin show-menu-desert {
+    animation: show-menu-desert 3s linear 1.5s 1 forwards;
+    @keyframes show-menu-desert {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

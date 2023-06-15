@@ -74,6 +74,11 @@
       padding: 20px 0 ;
       max-width: 322px;
       margin-bottom: 25px;
+      &:hover {
+        .fa-solid {
+          color: v.$primary-color;
+        }
+      }
       @media (min-width: 767.99px) {
         width: 280px;
       }

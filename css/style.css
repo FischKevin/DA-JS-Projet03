@@ -319,6 +319,9 @@ header .place .place-input {
   max-width: 322px;
   margin-bottom: 25px;
 }
+.fonctionnement .cards .instructions:hover .fa-solid {
+  color: #9356DC;
+}
 @media (min-width: 767.99px) {
   .fonctionnement .cards .instructions {
     width: 280px;

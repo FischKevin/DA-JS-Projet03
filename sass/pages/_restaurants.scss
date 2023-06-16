@@ -93,7 +93,6 @@ header {
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
             display: flex;
-            // flex-direction: column;
             position: relative;
             margin: 15px 10px 0 10px;
             padding-top: 15px;
@@ -150,24 +149,6 @@ header {
                         @include move-back-price;
                     }
                 }
-                // .dish-subtitle {
-                //     font-size: 15px;
-                //     font-weight: 300;
-                //     padding-left: 15px;
-                //     margin-top: 5px;
-                //     overflow: hidden;
-                //     text-overflow: ellipsis;
-                //     white-space: nowrap;
-                //     width: calc(100% - 55px);
-                // }
-                // .dish-price {
-                //     font-size: 15px;
-                //     font-weight: 700;
-                //     position: relative;
-                //     top: -17px;
-                //     left: calc(100% - 50px);
-                //     // @include move-back-price;
-                // }
             }
             .checkbox {
                 background-color: v.$tertiary-color;
@@ -198,7 +179,8 @@ header {
     }
 }
 .order-button {
-    background: v.$instruction-background-color;    align-items: center;
+    background: v.$instruction-background-color;    
+    align-items: center;
     display: flex;
     padding-top: 20px;
     @media (min-width: 1023.99px) {

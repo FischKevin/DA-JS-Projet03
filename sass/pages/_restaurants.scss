@@ -93,34 +93,106 @@ header {
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             position: relative;
             margin: 15px 10px 0 10px;
             padding-top: 15px;
-            .dish-title {
-                font-size: 18px;
-                font-weight: 600;
-                padding-left: 15px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
+            height: 69px;
+            overflow: hidden;
+            &:hover{
+                .checkbox {
+                    @include show-checkbox;
+                }
+                .dish > .second-line > .dish-subtitle {
+                    @include reduce-dish-subtitle;
+                }
+                .dish > .second-line > .dish-price {
+                    @include move-price;
+                }
             }
-            .dish-subtitle {
-                font-size: 15px;
-                font-weight: 300;
-                padding-left: 15px;
-                margin-top: 5px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                width: calc(100% - 55px);
+            .dish {
+                display: flex;
+                flex-direction: column;
+                .dish-title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding-left: 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin-top: -4px;
+                }
+                .second-line {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    position: absolute;
+                    top: 30px;
+                    overflow: hidden;
+                    .dish-subtitle {
+                        font-size: 15px;
+                        font-weight: 300;
+                        padding-left: 15px;
+                        margin-top: 5px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: calc(100% - 50px);
+                        // @include reduce-dish-subtitle;
+                    }
+                    .dish-price {
+                        font-size: 15px;
+                        font-weight: 700;
+                        position: relative;
+                        top: 5px;
+                        left: -20px;
+                        overflow: hidden;
+                        @include move-back-price;
+                    }
+                }
+                // .dish-subtitle {
+                //     font-size: 15px;
+                //     font-weight: 300;
+                //     padding-left: 15px;
+                //     margin-top: 5px;
+                //     overflow: hidden;
+                //     text-overflow: ellipsis;
+                //     white-space: nowrap;
+                //     width: calc(100% - 55px);
+                // }
+                // .dish-price {
+                //     font-size: 15px;
+                //     font-weight: 700;
+                //     position: relative;
+                //     top: -17px;
+                //     left: calc(100% - 50px);
+                //     // @include move-back-price;
+                // }
             }
-            .dish-price {
-                font-size: 15px;
-                font-weight: 700;
-                position: relative;
-                top: -17px;
-                padding-left: calc(100% - 50px);
+            .checkbox {
+                background-color: v.$tertiary-color;
+                height: 69px;
+                width: 60px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                left: calc(100%);
+                margin-top: -15px;
+                border-radius: 0 15px 15px 0;
+                overflow: hidden;
+                @include hide-checkbox;
+                .fa-check {
+                    color: v.$tertiary-color;
+                    position: relative;
+                    background-color: white;
+                    border-radius: 25px;
+                    font-size: 15px;
+                    top: 23px;
+                    height: fit-content;
+                    width: 15px;
+                    padding: 4px;
+                    overflow: hidden;
+                }
             }
         }
     }

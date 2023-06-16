@@ -121,3 +121,75 @@
         }
     }
 }
+
+@mixin show-checkbox {
+    animation: show-checkbox 0.25s ease-out 0s 1 forwards;
+    @keyframes show-checkbox {
+        0% {
+            left: calc(100%);
+        }
+        100% {
+            left: calc(100% - 60px);
+        }
+    }
+}
+
+@mixin hide-checkbox {
+    animation: hide-checkbox 0.25s ease-in 0s 1 forwards;
+    @keyframes hide-checkbox {
+        0% {
+            left: calc(100% - 60px);
+        }
+        100% {
+            left: calc(100%);
+        }
+    }
+}
+
+@mixin move-price {
+    animation: move-price 0.25s ease-out 0s 1 forwards;
+    @keyframes move-price {
+        0% {
+            left: -20px;
+        }
+        100% {
+            left: -70px;
+        }
+    }
+}
+
+@mixin move-back-price {
+    animation: move-back-price 0.25s ease-in 0s 1 forwards;
+    @keyframes move-back-price {
+        0% {
+            left: -70px;
+        }
+        100% {
+            left: -20px;
+        }
+    }
+}
+
+@mixin reduce-dish-subtitle {
+    animation: reduce-dish-subtitle 0.25s ease-out 0s 1 forwards;
+    @keyframes reduce-dish-subtitle {
+        0% {
+            width: calc(100% - 50px);
+        }
+        100% {
+            width: calc(100% - 100px);
+        }
+    }
+}
+
+// @mixin move-back-price {
+//     animation: move-back-price 0.25s ease-in 0s 1 forwards;
+//     @keyframes move-back-price {
+//         0% {
+//             left: -70px;
+//         }
+//         100% {
+//             left: -20px;
+//         }
+//     }
+// }

@@ -138,7 +138,7 @@ header {
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         width: calc(100% - 50px);
-                        // @include reduce-dish-subtitle;
+                        @include reduce-back-dish-subtitle;
                     }
                     .dish-price {
                         font-size: 15px;

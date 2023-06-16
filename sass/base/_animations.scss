@@ -182,14 +182,14 @@
     }
 }
 
-// @mixin move-back-price {
-//     animation: move-back-price 0.25s ease-in 0s 1 forwards;
-//     @keyframes move-back-price {
-//         0% {
-//             left: -70px;
-//         }
-//         100% {
-//             left: -20px;
-//         }
-//     }
-// }
+@mixin reduce-back-dish-subtitle {
+    animation: reduce-back-dish-subtitle 0.25s ease-in 0s 1 forwards;
+    @keyframes reduce-back-dish-subtitle {
+        0% {
+            width: calc(100% - 100px);
+        }
+        100% {
+            width: calc(100% - 50px);
+        }
+    }
+}

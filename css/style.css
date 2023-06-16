@@ -679,6 +679,15 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: calc(100% - 50px);
+  animation: reduce-back-dish-subtitle 0.25s ease-in 0s 1 forwards;
+}
+@keyframes reduce-back-dish-subtitle {
+  0% {
+    width: calc(100% - 100px);
+  }
+  100% {
+    width: calc(100% - 50px);
+  }
 }
 .menu .menu-category .menu-item .dish .second-line .dish-price {
   font-size: 15px;

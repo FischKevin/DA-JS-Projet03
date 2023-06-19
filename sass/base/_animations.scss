@@ -201,19 +201,19 @@
             width: 100%;
         }
         100% {
-            width: calc(100% - 20px);
+            width: calc(100% - 50px);
         }
     }
 }
 
-// @mixin reduce-back-dish-title {
-//     animation: reduce-back-dish-title 0.25s ease-in 0s 1 forwards;
-//     @keyframes reduce-back-dish-title {
-//         0% {
-//             width: calc(100% - 100px);
-//         }
-//         100% {
-//             width: calc(100% - 50px);
-//         }
-//     }
-// }
+@mixin reduce-back-dish-title {
+    animation: reduce-back-dish-title 0.25s ease-in 0s 1 forwards;
+    @keyframes reduce-back-dish-title {
+        0% {
+            width: calc(100% - 50px);
+        }
+        100% {
+            width: calc(100%);
+        }
+    }
+}

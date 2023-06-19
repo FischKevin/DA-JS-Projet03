@@ -102,15 +102,16 @@ header {
                 .checkbox {
                     @include show-checkbox;
                 }
-                // .dish > .dish-title {
-                //     @include reduce-dish-title;
-                // }
+                .dish> .title > .dish-title {
+                    @include reduce-dish-title;
+                }
                 .dish > .second-line > .dish-subtitle {
                     @include reduce-dish-subtitle;
                 }
-                .dish > .second-line > .dish-price {
+                .dish > .second-line > .dish-price, .dish> .title > .filler {
                     @include move-price;
                 }
+                
             }
             .dish {
                 display: flex;
@@ -118,21 +119,25 @@ header {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                .dish-title {
-                    font-size: 18px;
-                    font-weight: 600;
-                    padding-left: 15px;
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    position: absolute;
+                    top: 15px;
                     overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    margin-top: -4px;
-                    padding-right: 15px;
-                    // display: block;
-                    // max-width: 375px;
-                    // flex-basis: calc(100% - 10px);
-                    // flex-grow: 0;
-                    // flex-shrink: 0;
-                    // @include reduce-back-dish-title;
+                    .dish-title {
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding-left: 15px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        margin-top: -4px;
+                        padding-right: 15px;
+                        border-right: 20px;
+                        @include reduce-back-dish-title;
+                    }
                 }
                 .second-line {
                     display: flex;

@@ -627,6 +627,17 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
     left: calc(100% - 60px);
   }
 }
+.menu .menu-category .menu-item:hover .dish > .title > .dish-title {
+  animation: reduce-dish-title 0.25s linear 0s 1 forwards;
+}
+@keyframes reduce-dish-title {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 50px);
+  }
+}
 .menu .menu-category .menu-item:hover .dish > .second-line > .dish-subtitle {
   animation: reduce-dish-subtitle 0.25s linear 0s 1 forwards;
 }
@@ -638,7 +649,7 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
     width: calc(100% - 100px);
   }
 }
-.menu .menu-category .menu-item:hover .dish > .second-line > .dish-price {
+.menu .menu-category .menu-item:hover .dish > .second-line > .dish-price, .menu .menu-category .menu-item:hover .dish > .title > .filler {
   animation: move-price 0.25s linear 0s 1 forwards;
 }
 @keyframes move-price {
@@ -656,7 +667,15 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .menu-category .menu-item .dish .dish-title {
+.menu .menu-category .menu-item .dish .title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  overflow: hidden;
+}
+.menu .menu-category .menu-item .dish .title .dish-title {
   font-size: 18px;
   font-weight: 600;
   padding-left: 15px;
@@ -665,6 +684,16 @@ header .arrow a, header .arrow a:visited, header .arrow a:focus {
   white-space: nowrap;
   margin-top: -4px;
   padding-right: 15px;
+  border-right: 20px;
+  animation: reduce-back-dish-title 0.25s ease-in 0s 1 forwards;
+}
+@keyframes reduce-back-dish-title {
+  0% {
+    width: calc(100% - 50px);
+  }
+  100% {
+    width: 100%;
+  }
 }
 .menu .menu-category .menu-item .dish .second-line {
   display: flex;

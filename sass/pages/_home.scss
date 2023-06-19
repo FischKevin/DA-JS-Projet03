@@ -114,7 +114,7 @@
   font-family: 'Roboto';
   .all-restaurants {
      @media (min-width: 1023.99px) {
-      width: 1024px;
+      max-width: 1024px;
       margin-right: auto;
       margin-left: auto;
     }

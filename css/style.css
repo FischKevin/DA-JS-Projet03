@@ -357,7 +357,7 @@ header .place .place-input {
 }
 @media (min-width: 1023.99px) {
   .restaurants .all-restaurants {
-    width: 1024px;
+    max-width: 1024px;
     margin-right: auto;
     margin-left: auto;
   }

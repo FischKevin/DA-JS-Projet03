@@ -1,5 +1,5 @@
 # DA-JS-Projet03
-Project 2 from Software Developper JavaScript React path at OpenClassrooms.
+Project 3 from Software Developper JavaScript React path at OpenClassrooms.
 
 
 https://fischkevin.github.io/DA-JS-Projet03/

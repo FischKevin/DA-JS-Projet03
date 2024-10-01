@@ -514,9 +514,9 @@ header .place .place-input {
     font-weight: normal;
   }
 }
-.restaurants .cards a .restaurant .wording .fa-regular:hover,
-.restaurants .cards a:visited .restaurant .wording .fa-regular:hover,
-.restaurants .cards a:focus .restaurant .wording .fa-regular:hover {
+.restaurants .cards a .restaurant .wording .fa-regular.filled,
+.restaurants .cards a:visited .restaurant .wording .fa-regular.filled,
+.restaurants .cards a:focus .restaurant .wording .fa-regular.filled {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;

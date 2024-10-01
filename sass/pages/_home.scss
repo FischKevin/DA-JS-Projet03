@@ -218,7 +218,7 @@
             width: 25px;
             padding: 0 1px;
             @include heart-not-filled;
-            &:hover {
+            &.filled {
               background: linear-gradient(
                 193.33deg,
                 #9356dc -11.44%,
